@@ -23,7 +23,7 @@ void edit();
 void del();
 void write();
 void login();
-void search_option(char string[10]);
+void search_option(int v);
 int main()
 {
     login();
@@ -173,18 +173,18 @@ void search()
     scanf("%d",&h);
     if(h==1)
     {
-        search_option(x[g].room_no);
+        search_option(1);
     }
     else if(h==2)
     {
-        search_option(x[g].name);
+        search_option(2);
     }
     else if(h==3)
     {
-        search_option(x[g].rent_tatus);
+        search_option(3);
     }
     else if(h==4)    {
-        search_option(x[g].gender);
+        search_option(4);
     }
 
     else
@@ -306,15 +306,30 @@ void login(){
     }
 }
 
-void search_option(char z[10]){
+void search_option(int v){
     int f=1;
-    char u[100];
+    char u[100],z[10];
     fflush(stdin);
     printf("Enter =");
     gets(u);
     fflush(stdin);
     for(g=0; g<num; g++)
     {
+        switch (v)
+        {
+            case 1:
+                strcpy( z, x[g].room_no);
+                break;
+            case 2:
+                strcpy( z, x[g].name);
+                break;
+            case 3:
+                strcpy( z, x[g].rent_tatus);
+                break;
+            case 4:
+                strcpy( z, x[g].gender);
+                break;
+        }
         if(strcmp(u, z) == 0)
         {
             printf("\n");
