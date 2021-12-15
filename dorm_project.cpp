@@ -167,7 +167,7 @@ void edit()
 
 void search()
 {
-    int s,h;
+    int h;
     printf("By what do you want to search ?\n");
     printf("1.Room no.\n2.Name\n3.rent status\n4.gender\nOption =");
     scanf("%d",&h);
