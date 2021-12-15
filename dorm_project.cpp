@@ -310,7 +310,7 @@ void search_option(char z[10]){
     int f=1;
     char u[100];
     fflush(stdin);
-    printf("Enter room number =");
+    printf("Enter =");
     gets(u);
     fflush(stdin);
     for(g=0; g<num; g++)
