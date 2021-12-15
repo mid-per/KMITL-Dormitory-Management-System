@@ -31,7 +31,7 @@ int main()
     int c=0;
     printf("KMITL Dormitory Management System\n");
     printf("===============================\n");
-    while(c!=4)
+    while(c!=6)
     {
         printf("**Enter your choice**\n\n1. Add Information\n2. View Information\n3. Search\n"
                "4. Edit Information\n5. Delete Information\n6. exit\n\nOption=");
